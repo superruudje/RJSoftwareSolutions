@@ -19,7 +19,7 @@
                         <NuxtLink
                             active-class="active"
                             class="nav-link d-flex flex-column"
-                            to="/projects">
+                            to="/app/pages/projecten">
                               <span class="icon-holder">
                                 <i class="bi bi-suitcase-lg-fill"></i>
                               </span>

@@ -6,7 +6,7 @@
                 <p>Ik ben Rudi, freelance software engineer gespecialiseerd in het ontwikkelen van maatwerk webapplicaties en het
                     optimaliseren van digitale processen. Met een achtergrond in o.a. Vue, Java en MySQL help ik bedrijven hun ideeën om te
                     zetten in schaalbare en betrouwbare software. Bekijk mijn
-                    <NuxtLink to="/projects">
+                    <NuxtLink to="/app/pages/projecten">
                         laatste projecten en case studies
                     </NuxtLink>
                     .
