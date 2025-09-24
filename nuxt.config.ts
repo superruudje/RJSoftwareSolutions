@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         prerender: {
             autoSubfolderIndex: true,
             // Add dynamic routes if needed
-            routes: ['/', '/about', '/contact']
+            routes: ['/', '/projecten', '/resume', '/contact']
         }
     },
     app: {
