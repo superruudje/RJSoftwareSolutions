@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="section-cta text-center mt-3">
-                    <NuxtLink class="btn btn-secondary theme-btn-cta" to="projects">Meer projecten
+                    <NuxtLink class="btn btn-secondary theme-btn-cta" to="/app/pages/projecten">Meer projecten
                         <i class="bi bi-arrow-right-short fs-4 align-middle ms-1"></i>
                     </NuxtLink>
                 </div>
