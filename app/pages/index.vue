@@ -6,7 +6,7 @@
                 <p>Ik ben Rudi, freelance software engineer gespecialiseerd in het ontwikkelen van maatwerk webapplicaties en het
                     optimaliseren van digitale processen. Met een achtergrond in o.a. Vue, Java en MySQL help ik bedrijven hun ideeën om te
                     zetten in schaalbare en betrouwbare software. Bekijk mijn
-                    <NuxtLink to="/app/pages/projecten">
+                    <NuxtLink to="/projecten">
                         laatste projecten en case studies
                     </NuxtLink>
                     .
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="section-cta text-center mt-3">
-                    <NuxtLink class="btn btn-secondary theme-btn-cta" to="/app/pages/projecten">Meer projecten
+                    <NuxtLink class="btn btn-secondary theme-btn-cta" to="/projecten">Meer projecten
                         <i class="bi bi-arrow-right-short fs-4 align-middle ms-1"></i>
                     </NuxtLink>
                 </div>

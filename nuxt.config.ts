@@ -26,6 +26,13 @@ export default defineNuxtConfig({
             alias: {
                 '@': fileURLToPath(new URL('./app', import.meta.url)),
             }
+        },
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    quietDeps: true
+                }
+            }
         }
     },
 })
