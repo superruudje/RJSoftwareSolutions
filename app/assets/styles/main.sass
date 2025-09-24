@@ -1,0 +1,410 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap"
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+@import "theme-1"
+@import "light-mode"
+
+:root,
+[data-bs-theme=light]
+  --bs-blue: #0d6efd
+  --bs-indigo: #6610f2
+  --bs-purple: #6f42c1
+  --bs-pink: #d63384
+  --bs-red: #dc3545
+  --bs-orange: #fd7e14
+  --bs-yellow: #ffc107
+  --bs-green: #198754
+  --bs-teal: #20c997
+  --bs-cyan: #0dcaf0
+  --bs-black: #000
+  --bs-white: #fff
+  --bs-gray: #6c757d
+  --bs-gray-dark: #343a40
+  --bs-gray-100: #f8f9fa
+  --bs-gray-200: #e9ecef
+  --bs-gray-300: #dee2e6
+  --bs-gray-400: #ced4da
+  --bs-gray-500: #adb5bd
+  --bs-gray-600: #6c757d
+  --bs-gray-700: #495057
+  --bs-gray-800: #343a40
+  --bs-gray-900: #212529
+  --bs-primary: #fe655c
+  --bs-secondary: #4f6591
+  --bs-success: #198754
+  --bs-info: #0dcaf0
+  --bs-warning: #ffc107
+  --bs-danger: #dc3545
+  --bs-light: #f8f9fa
+  --bs-dark: #212529
+  --bs-primary-rgb: 254, 101, 92
+  --bs-secondary-rgb: 79, 101, 145
+  --bs-success-rgb: 25, 135, 84
+  --bs-info-rgb: 13, 202, 240
+  --bs-warning-rgb: 255, 193, 7
+  --bs-danger-rgb: 220, 53, 69
+  --bs-light-rgb: 248, 249, 250
+  --bs-dark-rgb: 33, 37, 41
+  --bs-primary-text-emphasis: #662825
+  --bs-secondary-text-emphasis: #20283a
+  --bs-success-text-emphasis: #0a3622
+  --bs-info-text-emphasis: #055160
+  --bs-warning-text-emphasis: #664d03
+  --bs-danger-text-emphasis: #58151c
+  --bs-light-text-emphasis: #495057
+  --bs-dark-text-emphasis: #495057
+  --bs-primary-bg-subtle: #ffe0de
+  --bs-secondary-bg-subtle: #dce0e9
+  --bs-success-bg-subtle: #d1e7dd
+  --bs-info-bg-subtle: #cff4fc
+  --bs-warning-bg-subtle: #fff3cd
+  --bs-danger-bg-subtle: #f8d7da
+  --bs-light-bg-subtle: #fcfcfd
+  --bs-dark-bg-subtle: #ced4da
+  --bs-primary-border-subtle: #ffc1be
+  --bs-secondary-border-subtle: #b9c1d3
+  --bs-success-border-subtle: #a3cfbb
+  --bs-info-border-subtle: #9eeaf9
+  --bs-warning-border-subtle: #ffe69c
+  --bs-danger-border-subtle: #f1aeb5
+  --bs-light-border-subtle: #e9ecef
+  --bs-dark-border-subtle: #adb5bd
+  --bs-white-rgb: 255, 255, 255
+  --bs-black-rgb: 0, 0, 0
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+  --bs-body-font-family: var(--bs-font-sans-serif)
+  --bs-body-font-size: 1rem
+  --bs-body-font-weight: 400
+  --bs-body-line-height: 1.5
+  --bs-body-color: #212529
+  --bs-body-color-rgb: 33, 37, 41
+  --bs-body-bg: #fff
+  --bs-body-bg-rgb: 255, 255, 255
+  --bs-emphasis-color: #000
+  --bs-emphasis-color-rgb: 0, 0, 0
+  --bs-secondary-color: rgba(33, 37, 41, 0.75)
+  --bs-secondary-color-rgb: 33, 37, 41
+  --bs-secondary-bg: #e9ecef
+  --bs-secondary-bg-rgb: 233, 236, 239
+  --bs-tertiary-color: rgba(33, 37, 41, 0.5)
+  --bs-tertiary-color-rgb: 33, 37, 41
+  --bs-tertiary-bg: #f8f9fa
+  --bs-tertiary-bg-rgb: 248, 249, 250
+  --bs-heading-color: inherit
+  --bs-link-color: #fe655c
+  --bs-link-color-rgb: 254, 101, 92
+  --bs-link-decoration: underline
+  --bs-link-hover-color: #cb514a
+  --bs-link-hover-color-rgb: 203, 81, 74
+  --bs-code-color: #d63384
+  --bs-highlight-color: #212529
+  --bs-highlight-bg: #fff3cd
+  --bs-border-width: 1px
+  --bs-border-style: solid
+  --bs-border-color: #dee2e6
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175)
+  --bs-border-radius: 0.375rem
+  --bs-border-radius-sm: 0.25rem
+  --bs-border-radius-lg: 0.5rem
+  --bs-border-radius-xl: 1rem
+  --bs-border-radius-xxl: 2rem
+  --bs-border-radius-2xl: var(--bs-border-radius-xxl)
+  --bs-border-radius-pill: 50rem
+  --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)
+  --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175)
+  --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075)
+  --bs-focus-ring-width: 0.25rem
+  --bs-focus-ring-opacity: 0.25
+  --bs-focus-ring-color: rgba(254, 101, 92, 0.25)
+  --bs-form-valid-color: #198754
+  --bs-form-valid-border-color: #198754
+  --bs-form-invalid-color: #dc3545
+  --bs-form-invalid-border-color: #dc3545
+
+[data-bs-theme=dark]
+  color-scheme: dark
+  --bs-body-color: #dee2e6
+  --bs-body-color-rgb: 222, 226, 230
+  --bs-body-bg: #212529
+  --bs-body-bg-rgb: 33, 37, 41
+  --bs-emphasis-color: #fff
+  --bs-emphasis-color-rgb: 255, 255, 255
+  --bs-secondary-color: rgba(222, 226, 230, 0.75)
+  --bs-secondary-color-rgb: 222, 226, 230
+  --bs-secondary-bg: #343a40
+  --bs-secondary-bg-rgb: 52, 58, 64
+  --bs-tertiary-color: rgba(222, 226, 230, 0.5)
+  --bs-tertiary-color-rgb: 222, 226, 230
+  --bs-tertiary-bg: #2b3035
+  --bs-tertiary-bg-rgb: 43, 48, 53
+  --bs-primary-text-emphasis: #fea39d
+  --bs-secondary-text-emphasis: #95a3bd
+  --bs-success-text-emphasis: #75b798
+  --bs-info-text-emphasis: #6edff6
+  --bs-warning-text-emphasis: #ffda6a
+  --bs-danger-text-emphasis: #ea868f
+  --bs-light-text-emphasis: #f8f9fa
+  --bs-dark-text-emphasis: #dee2e6
+  --bs-primary-bg-subtle: #331412
+  --bs-secondary-bg-subtle: #10141d
+  --bs-success-bg-subtle: #051b11
+  --bs-info-bg-subtle: #032830
+  --bs-warning-bg-subtle: #332701
+  --bs-danger-bg-subtle: #2c0b0e
+  --bs-light-bg-subtle: #343a40
+  --bs-dark-bg-subtle: #1a1d20
+  --bs-primary-border-subtle: #983d37
+  --bs-secondary-border-subtle: #2f3d57
+  --bs-success-border-subtle: #0f5132
+  --bs-info-border-subtle: #087990
+  --bs-warning-border-subtle: #997404
+  --bs-danger-border-subtle: #842029
+  --bs-light-border-subtle: #495057
+  --bs-dark-border-subtle: #343a40
+  --bs-heading-color: inherit
+  --bs-link-color: #fea39d
+  --bs-link-hover-color: #feb5b1
+  --bs-link-color-rgb: 254, 163, 157
+  --bs-link-hover-color-rgb: 254, 181, 177
+  --bs-code-color: #e685b5
+  --bs-highlight-color: #dee2e6
+  --bs-highlight-bg: #664d03
+  --bs-border-color: #495057
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15)
+  --bs-form-valid-color: #75b798
+  --bs-form-valid-border-color: #75b798
+  --bs-form-invalid-color: #ea868f
+  --bs-form-invalid-border-color: #ea868f
+
+body
+  color: #a5b3ce
+  background: #19202e
+  font-family: "Inter", sans-serif
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+  color: white
+  font-weight: bold
+
+.ls-1
+  letter-spacing: 0.1rem
+.ls-2
+  letter-spacing: 0.2rem
+.ls-n1
+  letter-spacing: -0.05rem
+
+a
+  color: #629feb
+  text-decoration: none
+
+a:hover
+  color: #6ba5ec
+  text-decoration: underline
+
+.text-highlight
+  color: #629feb !important
+  font-weight: 600
+
+small, .small
+  font-size: 0.75rem
+
+.btn, a.btn
+  font-weight: bold
+  padding: 0.5rem 1.5rem
+  font-size: 1rem
+  outline: none
+  border-radius: 2rem
+  text-decoration: none
+
+.btn svg, a.btn svg
+  stroke-width: 2px
+  margin-left: 0.25rem
+
+.btn svg, a.btn svg
+  stroke-width: 2px
+  margin-left: 0.25rem
+
+
+.btn:focus, .btn.focus, .btn:active
+  box-shadow: none !important
+  transition: all 0.4s ease-in-out
+  outline: none
+
+@media (prefers-reduced-motion: reduce)
+  .btn:focus, .btn.focus, .btn:active
+    transition: none
+
+.btn-primary
+  color: #fff
+  background: #fe655c
+
+.btn-primary:hover, .btn-primary:active
+  color: white
+  background: #fe4d43
+  border-color: #fe4d43
+
+.btn-primary svg
+  stroke-width: 2px
+
+
+.btn-secondary
+  color: white
+  background: #465981
+  border-color: #465981
+
+.btn-secondary:hover, .btn-secondary:active
+  color: white
+  background: #4f6591
+  border-color: #4f6591
+
+
+.theme-btn-ghost
+  color: #fff
+  background: none
+  border-color: #fff
+
+
+.form-control
+  padding-top: 0.875rem
+  padding-bottom: 0.875rem
+  border-color: #273248
+  background-color: #273248
+  color: white
+
+.form-control::-webkit-input-placeholder
+  /* WebKit browsers */
+  color: #a5b3ce
+
+.form-control:-moz-placeholder
+  /* Mozilla Firefox 4 to 18 */
+  color: #a5b3ce
+
+.form-control::-moz-placeholder
+  /* Mozilla Firefox 19+ */
+  color: #a5b3ce
+
+.form-control:-ms-input-placeholder
+  /* Internet Explorer 10+ */
+  color: #a5b3ce
+
+.form-control:focus
+  box-shadow: none
+  border: 1px solid #273248
+  background-color: #303e59
+  color: white
+
+
+.form-text
+  font-size: 0.8rem
+
+
+textarea.form-control
+  height: inherit
+
+
+.error
+  color: #D9603C
+
+
+.form-group label.error
+  font-size: 0.875rem
+  padding: 0.5rem 0
+
+.form-group .btn
+  line-height: 1
+
+
+.form-select
+  border-color: rgba(215, 221, 233, 0.1)
+  height: 2.5rem
+  color: rgba(255, 255, 255, 0.3)
+
+
+a.more-link
+  text-decoration: none
+  color: #629feb
+  font-weight: 600
+  font-size: 0.875rem
+
+a.more-link:hover
+  text-decoration: underline
+  color: #4b91e8
+
+a.more-link:hover .link-arrow
+  margin-left: 0.5rem
+
+a.more-link .link-arrow
+  transition: all 0.2s ease-in-out
+  display: inline-block
+
+@media (prefers-reduced-motion: reduce)
+  a.more-link .link-arrow
+    transition: non
+
+a.more-link .link-arrow .bi
+  position: relative
+  top: 1px
+
+.limit-max-width
+  max-width: 700px
+
+/* Section */
+.section
+  background: #1e2738
+  padding: 3rem
+  border-radius: 0.5rem
+  color: #a5b3ce
+  margin-bottom: 2.5rem
+
+.section.has-profile-image
+  margin-top: 90px
+  position: relative
+  padding-top: calc(75px + 1rem)
+
+.section.has-profile-image .profile-pic
+  max-width: 160px
+  height: auto
+  position: absolute
+  left: 50%
+  margin-left: -80px
+  top: -80px
+  border: 8px solid #1e2738
+
+.section-heading
+  font-size: 1.75rem
+  text-align: center
+  color: white
+  font-weight: 900
+  letter-spacing: 0.1rem
+
+.section-subheading
+  font-size: 1.125rem
+  color: white
+
+.section-intro
+  margin: 0 auto
+
+@media (min-width: 992px)
+  .section, .blog-list-wrapper, .resume-wrapper
+    max-width: 815px
+
+@media (min-width: 1200px)
+  .section, .blog-list-wrapper, .resume-wrapper
+    max-width: 940px
+
+@media (min-width: 1400px)
+  .section, .blog-list-wrapper, .resume-wrapper
+    max-width: 980px
+
+@media (max-width: 991.98px)
+  body
+    padding-bottom: 70px
+
+  .section
+    padding: 3rem 1.5rem
+
+  .section.has-profile-image, .resume-wrapper
+    margin-top: 60px
+    padding-top: calc(75px + 1rem)
+
