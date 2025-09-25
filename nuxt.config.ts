@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         }
     },
     app: {
-        baseURL: '/RJSoftwareSolutions/'
+        baseURL: '/'
     },
     typescript: { strict: true },
     modules: ['@pinia/nuxt'],
