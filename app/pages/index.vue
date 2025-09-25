@@ -73,32 +73,32 @@
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="JavaScript"
                          class="rounded"
-                         src="@/assets/images/tech-icons/javascript.svg">
+                         src="/images/tech-icons/javascript.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="TypeScript"
                          class="rounded"
-                         src="@/assets/images/tech-icons/typescript.svg">
+                         src="/images/tech-icons/typescript.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Vue.js"
                          class="rounded"
-                         src="@/assets/images/tech-icons/vue.svg">
+                         src="/images/tech-icons/vue.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Bootstrap"
                          class="rounded"
-                         src="@/assets/images/tech-icons/bootstrap5.svg">
+                         src="/images/tech-icons/bootstrap5.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Vite"
                          class="rounded"
-                         src="@/assets/images/tech-icons/vite.svg">
+                         src="/images/tech-icons/vite.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Azure"
                          class="rounded"
-                         src="@/assets/images/tech-icons/azure.svg">
+                         src="/images/tech-icons/azure.svg">
                 </div>
 
                 <div class="clearfix"></div>
@@ -106,42 +106,42 @@
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="HTML"
                          class="rounded"
-                         src="@/assets/images/tech-icons/html5.svg">
+                         src="/images/tech-icons/html5.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Sass"
                          class="rounded"
-                         src="@/assets/images/tech-icons/sass.svg">
+                         src="/images/tech-icons/sass.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Laravel"
                          class="rounded"
-                         src="@/assets/images/tech-icons/laravel.svg">
+                         src="/images/tech-icons/laravel.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Php"
                          class="rounded"
-                         src="@/assets/images/tech-icons/php.svg">
+                         src="/images/tech-icons/php.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Java"
                          class="rounded"
-                         src="@/assets/images/tech-icons/java.svg">
+                         src="/images/tech-icons/java.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="MySQL"
                          class="rounded"
-                         src="@/assets/images/tech-icons/mysql.svg">
+                         src="/images/tech-icons/mysql.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Wordpress"
                          class="rounded"
-                         src="@/assets/images/tech-icons/wordpress.svg">
+                         src="/images/tech-icons/wordpress.svg">
                 </div>
                 <div class="icon-item col-4 col-md-3 col-lg-2 mb-3 mb-lg-5">
                     <img alt="Elementor"
                          class="rounded"
-                         src="@/assets/images/tech-icons/elementor.svg">
+                         src="/images/tech-icons/elementor.svg">
                 </div>
             </div>
             <div class="section-cta text-center mt-4">
@@ -314,7 +314,6 @@
 
 <script setup lang="ts">
 import {onMounted} from "vue";
-import {tns} from "tiny-slider";
 import TopBar from "~/components/TopBar.vue";
 import PageIntro from "~/components/PageIntro.vue";
 import {useProjectsStore} from "@/stores/projects";
@@ -329,7 +328,8 @@ useHead({
 
 const projectsStore = useProjectsStore()
 
-onMounted(() => {
+onMounted(async () => {
+    const { tns } = await import('tiny-slider')
     tns({
         container: '.tiny-slider',
         loop: true,
